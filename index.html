@@ -4,19 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="mainContainer">
 
-        <div id="topNav"></div>
+        <!-- work: buttons = 4, type='text' = 1, textarea = 1 (includes a image of a small magnify glass within the textarea) -->
+        <div id="topNavBar">
 
-        <div id="middleNavTop"></div>
-        <div id="middleNavBottom"></div>
+            <p class="topWord">Profile</p>
 
-        <div id="bottomNav"></div>
+            <button type="button" class="leftArrow"></button> <!--Create left arrow-->
+            <button type="button" class="rightArrow"></button> <!--Create right arrow-->
+            <button type="button" class="xReset"></button>     <!--Create reset button to stop page running-->
+            <button type="button" class="home"></button>        <!--Create home button. It redirects users to the main page -->
 
-    </div>
+            <input type="text" class="urlPath" placeholder="URL Search..."> <!--User will search for other websites-->
+
+            <input type="search" name="search" id="searchTopNav" placeholder="🔍 Search Here...">
+
+        </div>
+
+        <div id="middleNavTop"> middleNavTop </div>
+
+        <div id="middleNavBottom"> middleNavBottom
+
+            <img src="icons/user-circle.png" alt="user circle">
+
+            <p>Oriel Silva</p>
+
+            <img src="icons/map-marker.png" alt="map-marker"> <a href="https://www.gps-coordinates.net/my-location"> Current Location </a> </img>
+
+            <table>
+               <thead>
+                <tr>
+                   <th>Developer | Engineer | Problem Solver</th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                    <td>Master of shadows and the Internet!</td>
+                </tr>
+               </tbody>
+            </table>
+
+            <img src="icons/gear.png" alt="gear"> <a href="https://www.youtube.com/watch?v=gZfeMQXIa8I"> edit profile </a> </img>
+
+            <!-- p tag idea, but noticed creating a table would look better
+            <p id="jobStatus"> Developer | Engineer | Problem Solver </p>
+            <p id="jobStatus"> Master of shadows and the Internet! </p> -->
+
+        </div>
+
+        <div id="bottomNav"> bottomNav
+            <img src="" alt="">
+        </div>
+
+    </div> <!--end of mainContainer-->
 
 </body>
 </html>
