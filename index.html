@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
 
     <div class="mainContainer">
@@ -15,10 +18,11 @@
 
             <p class="topWord">Profile</p>
 
-            <button type="button" class="leftArrow"></button> <!--Create left arrow-->
-            <button type="button" class="rightArrow"></button> <!--Create right arrow-->
-            <button type="button" class="xReset"></button>     <!--Create reset button to stop page running-->
-            <button type="button" class="home"></button>        <!--Create home button. It redirects users to the main page -->
+            <button onclick="goBack(this)">⬅️</button> <!--Create left arrow-->
+            <button onclick="goForward(this)">➡️</button> <!--Create right arrow-->
+            <button type="button" class="xReset">✖️</button> <!--Create reset button to stop page running-->
+            <button type="button" class="home">🏠</button>
+            <!--Create home button. It redirects users to the main page -->
 
             <input type="text" class="urlPath" placeholder="URL Search..."> <!--User will search for other websites-->
 
@@ -26,17 +30,26 @@
 
         </div>
 
-        <div id="middleNavTop"> middleNavTop </div>
+        <div id="middleNavTop"></div>
 
-        <div id="middleNavBottom"> middleNavBottom
+        <div id="middleNavBottom">
 
-            <img src="icons/user-circle.png" alt="user circle">
+            <img src="icons/user-circle.png" alt="user circle" id="userIcon">
 
-            <p>Oriel Silva</p>
+            <p id="names">Oriel Silva</p>
 
-            <img src="icons/map-marker.png" alt="map-marker"> <a href="https://www.gps-coordinates.net/my-location"> Current Location </a> </img>
+            <div class="iconContainer">
+                <img class="iconMarker" src="icons/map-marker.png" alt="map-marker">
+                <p class="iconText">Location</p>
+            </div>
 
-            <table>
+            <p id="jobStatus"> Developer | Engineer | Problem Solver </p>
+            <p id="jobStatus2"> Master of shadows and the Internet! </p>
+
+            <img class="gear" src="icons/gear.png" alt="gear"> <a class="aTagLink"
+                href="https://www.youtube.com/watch?v=gZfeMQXIa8I"> edit profile </a> </img>
+
+            <!-- <table>
                <thead>
                 <tr>
                    <th>Developer | Engineer | Problem Solver</th>
@@ -47,21 +60,25 @@
                     <td>Master of shadows and the Internet!</td>
                 </tr>
                </tbody>
-            </table>
+            </table> -->
 
-            <img src="icons/gear.png" alt="gear"> <a href="https://www.youtube.com/watch?v=gZfeMQXIa8I"> edit profile </a> </img>
 
             <!-- p tag idea, but noticed creating a table would look better
             <p id="jobStatus"> Developer | Engineer | Problem Solver </p>
             <p id="jobStatus"> Master of shadows and the Internet! </p> -->
 
-        </div>
+        </div> <!--End of middleNavBottom-->
 
-        <div id="bottomNav"> bottomNav
-            <img src="" alt="">
+
+        <div id="bottomNav">
+
+            <img class="ticks" src="icons/bottomNavTicks.jpg" alt="ticks">
+
+
         </div>
 
     </div> <!--end of mainContainer-->
 
 </body>
+
 </html>
